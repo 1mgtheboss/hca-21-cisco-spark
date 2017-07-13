@@ -19,12 +19,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/howdyai/botkit-starter-ciscospark.git"
+    "url": "https://github.com/MGTHEBOSS/hca-21-cisco-spark.git"
   },
   "bugs": {
-    "url": "https://github.com/howdyai/botkit-starter-ciscospark/issues"
+    "url": "https://github.com/MGTHEBOSS/hca-21-cisco-spark/issues"
   },
-  "homepage": "https://github.com/howdyai/botkit-starter-ciscospark",
+  "homepage": "https://github.com/MGTHEBOSS/hca-21-cisco-spark",
   "keywords": [
     "bots",
     "chatbots",
