@@ -1,9 +1,9 @@
 {
   "name": "HCA-21",
   "description": "A bot that provides intelligent diagnostic insights, accurate provider data, health topic summaries, curated drug information, & stock price of a medical corporation.",
-  "repository": "https://github.com/howdyai/botkit-starter-ciscospark",
+  "repository": "https://github.com/MGTHEBOSS/hca-21-cisco-spark",
   "keywords": ["node", "bots", "cisco spark","botkit"],
-  "website": "https://studio.botkit.ai/",
+  "website": "https://github.com/MGTHEBOSS/hca-21-cisco-spark",
   "success_url":"/",
   "env": {
       "access_token": {
