@@ -288,26 +288,21 @@ It has been observed that on web.ciscospark.com (Browser: Chrome, OS: Windows 7 
 
 ## Status Pages
 Cisco Spark: status.ciscospark.com  
-Glitch: status.glitch.com
-Studio: blog.howdy.ai
-Infermedica: status.infermedica.com
-BetterDoctor: betterdoctor.com/health
-Wolfram|Alpha (Full Results): blog.wolframalpha.com
-openFDA: open.fda.gov/api/status
-Wolfram|Alpha (Short Answers): blog.wolframalpha.com
+Glitch: status.glitch.com  
+Studio: blog.howdy.ai  
+Infermedica: status.infermedica.com  
+BetterDoctor: betterdoctor.com/health  
+Wolfram|Alpha (Full Results): blog.wolframalpha.com  
+openFDA: open.fda.gov/api/status  
+Wolfram|Alpha (Short Answers): blog.wolframalpha.com  
 
 ## Limits
-Studio: 500
-
-Infermedica: 1,000
-
-BetterDoctor: 2,160,000
-
-Wolfram|Alpha (Full Results): 2,000
-
-openFDA: 3,600,000
-
-Wolfram|Alpha (Short Answers): 2,000
+Studio: 500  
+Infermedica: 1,000  
+BetterDoctor: 2,160,000  
+Wolfram|Alpha (Full Results): 2,000  
+openFDA: 3,600,000  
+Wolfram|Alpha (Short Answers): 2,000  
 
 ## Conclusion
 HCA-21 has been built to improve collaboration in healthcare by addressing the key pain points in the sector. Medical errors are [the third leading cause of death](https://www.usnews.com/news/articles/2016-05-03/medical-errors-are-third-leading-cause-of-death-in-the-us) in the US. Most of these errors are preventable, through better coordination, faster screening, and systematic operations. HCA-21 puts a weapon the stakeholders in healthcare need to fight this menace and ensure high-quality medical care for everyone while bringing down the costs at the same time. HCA-21 would not come into existence without Cisco Spark & Botkit. The tireless efforts of engineers at Cisco Spark has made it a unique platform which has the power to revolutionize healthcare at its core. During development of HCA-21, wonderful support was received from the Cisco Spark Developer Support Team. Botkit is now a bot developer's first choice for building a Cisco Spark bot due to its modular and simple architecture and lucid documentation. The effort the Howdy Team has put into Botkit & Botkit Studio is admirable without a doubt. HCA-21 puts highly valuable information from reputed sources within the reach of all stakeholders in healthcare, and that has the potential to change the US healthcare for the better.
