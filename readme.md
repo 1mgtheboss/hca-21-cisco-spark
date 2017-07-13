@@ -287,14 +287,14 @@ HCA-21 is hosted on [Glitch](glitch.com). If you are going to interact with the 
 It has been observed that on web.ciscospark.com (Browser: Chrome, OS: Windows 7 Professional), a botkit bot fails to process direct mentions in the expected manner. This is due to [#749](https://github.com/howdyai/botkit/issues/749). The issue is not observed in the Windows 7 Professional native client. It is recommended that the bot is communicated to in direct message mode in the above-mentioned case.
 
 ## Status Pages
-Cisco Spark: status.ciscospark.com  
-Glitch: status.glitch.com  
-Studio: blog.howdy.ai  
-Infermedica: status.infermedica.com  
-BetterDoctor: betterdoctor.com/health  
-Wolfram|Alpha (Full Results): blog.wolframalpha.com  
-openFDA: open.fda.gov/api/status  
-Wolfram|Alpha (Short Answers): blog.wolframalpha.com  
+Cisco Spark: [status.ciscospark.com](status.ciscospark.com)  
+Glitch: [status.glitch.com](status.glitch.com)  
+Studio: [blog.howdy.ai](blog.howdy.ai)  
+Infermedica: [status.infermedica.com](status.infermedica.com)  
+BetterDoctor: [betterdoctor.com/health](betterdoctor.com/health)  
+Wolfram|Alpha (Full Results): [blog.wolframalpha.com](blog.wolframalpha.com)  
+openFDA: [open.fda.gov/api/status  ](open.fda.gov/api/status)  
+Wolfram|Alpha (Short Answers): [blog.wolframalpha.com](blog.wolframalpha.com)  
 
 ## Limits
 Studio: 500  
