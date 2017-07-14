@@ -1,0 +1,883 @@
+[
+  {
+    "command": "fallback",
+    "description": "What the bot says if no other trigger matches",
+    "script": [
+      {
+        "topic": "default",
+        "script": [
+          {
+            "text": [
+              "I apologize, but my circuits have not been configured for that input. Say **help** for information about my current capabilities."
+            ]
+          },
+          {
+            "action": "complete"
+          }
+        ]
+      },
+      {
+        "topic": "timeout",
+        "script": [
+          {
+            "text": [
+              "Looks like you got distracted. We can continue later."
+            ]
+          },
+          {
+            "action": "timeout"
+          }
+        ]
+      }
+    ],
+    "triggers": [],
+    "variables": []
+  },
+  {
+    "command": "curated_drug_information",
+    "description": "Provide curated drug information",
+    "script": [
+      {
+        "topic": "default",
+        "script": [
+          {
+            "text": [
+              "In order to provide you curated drug information, I need some information."
+            ]
+          },
+          {
+            "text": [
+              "Please enter the drug's brand name."
+            ],
+            "collect": {
+              "key": "question_1",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "next"
+                }
+              ]
+            }
+          },
+          {
+            "text": [
+              "You have entered {{responses.question_1}}."
+            ]
+          },
+          {
+            "action": "end"
+          }
+        ]
+      },
+      {
+        "topic": "on_timeout",
+        "script": [
+          {
+            "text": [
+              "Looks like you got distracted. We can continue later."
+            ]
+          },
+          {
+            "action": "timeout"
+          }
+        ]
+      },
+      {
+        "topic": "end",
+        "script": [
+          {
+            "action": "complete"
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "pattern": "cdi-4",
+        "type": "string",
+        "id": 198
+      },
+      {
+        "pattern": "curated_drug_information",
+        "type": "string",
+        "id": 351
+      }
+    ],
+    "variables": [
+      {
+        "name": "question_1",
+        "type": "string"
+      },
+      {
+        "name": "question_2",
+        "type": "string"
+      },
+      {
+        "name": "question_3",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "command": "medical_corporation_stock_price",
+    "description": "Provide stock price of a medical corporation",
+    "script": [
+      {
+        "topic": "default",
+        "script": [
+          {
+            "text": [
+              "In order to provide you the stock price of a medical corporation, I need some information."
+            ]
+          },
+          {
+            "text": [
+              "Please enter the corporation name."
+            ],
+            "collect": {
+              "key": "question_1",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "next"
+                }
+              ]
+            }
+          },
+          {
+            "text": [
+              "You have entered {{responses.question_1}}."
+            ]
+          },
+          {
+            "action": "end"
+          }
+        ]
+      },
+      {
+        "topic": "on_timeout",
+        "script": [
+          {
+            "text": [
+              "Looks like you got distracted. We can continue later."
+            ]
+          },
+          {
+            "action": "timeout"
+          }
+        ]
+      },
+      {
+        "topic": "end",
+        "script": [
+          {
+            "action": "complete"
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "pattern": "msp-5",
+        "type": "string",
+        "id": 159
+      },
+      {
+        "pattern": "medical_corporation_stock_price",
+        "type": "string",
+        "id": 87
+      }
+    ],
+    "variables": [
+      {
+        "name": "question_1",
+        "type": "string"
+      },
+      {
+        "name": "question_2",
+        "type": "string"
+      },
+      {
+        "name": "question_3",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "command": "health_topic_summaries",
+    "description": "Provide health topic summaries",
+    "script": [
+      {
+        "topic": "default",
+        "script": [
+          {
+            "text": [
+              "In order to provide you health topic summaries, I need some information."
+            ]
+          },
+          {
+            "text": [
+              "Please enter your topic."
+            ],
+            "collect": {
+              "key": "question_1",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "next"
+                }
+              ]
+            }
+          },
+          {
+            "text": [
+              "You have entered {{responses.question_1}}."
+            ]
+          },
+          {
+            "action": "end"
+          }
+        ]
+      },
+      {
+        "topic": "on_timeout",
+        "script": [
+          {
+            "text": [
+              "Looks like you got distracted. We can continue later."
+            ]
+          },
+          {
+            "action": "timeout"
+          }
+        ]
+      },
+      {
+        "topic": "end",
+        "script": [
+          {
+            "action": "complete"
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "pattern": "hts-3",
+        "type": "string",
+        "id": 487
+      },
+      {
+        "type": "string",
+        "pattern": "health_topic_summaries"
+      }
+    ],
+    "variables": [
+      {
+        "name": "question_1",
+        "type": "string"
+      },
+      {
+        "name": "question_2",
+        "type": "string"
+      },
+      {
+        "name": "question_3",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "command": "accurate_provider_data",
+    "description": "Provide accurate provider data",
+    "script": [
+      {
+        "topic": "default",
+        "script": [
+          {
+            "text": [
+              "In order to provide you accurate provider data, I need some information."
+            ]
+          },
+          {
+            "text": [
+              "Please enter your choice. Do you want a. doctor information or b. practice information?"
+            ],
+            "collect": {
+              "key": "question_1",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "repeat"
+                },
+                {
+                  "pattern": "a",
+                  "type": "string",
+                  "action": "doctor"
+                },
+                {
+                  "pattern": "b",
+                  "type": "string",
+                  "action": "practice"
+                }
+              ]
+            }
+          },
+          {
+            "action": "complete"
+          }
+        ]
+      },
+      {
+        "topic": "on_timeout",
+        "script": [
+          {
+            "text": [
+              "Looks like you got distracted. We can continue later."
+            ]
+          },
+          {
+            "action": "timeout"
+          }
+        ]
+      },
+      {
+        "topic": "doctor",
+        "script": [
+          {
+            "text": [
+              "You have selected a. doctor information."
+            ]
+          },
+          {
+            "text": [
+              "Please enter doctor name."
+            ],
+            "collect": {
+              "key": "doctor_question_1",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "next"
+                }
+              ]
+            }
+          },
+          {
+            "text": [
+              "Please enter state postal code."
+            ],
+            "collect": {
+              "key": "doctor_question_2",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "next"
+                }
+              ]
+            }
+          },
+          {
+            "text": [
+              "Please enter keyword."
+            ],
+            "collect": {
+              "key": "doctor_question_3",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "next"
+                }
+              ]
+            }
+          },
+          {
+            "action": "end"
+          }
+        ]
+      },
+      {
+        "topic": "practice",
+        "script": [
+          {
+            "text": [
+              "You have selected b. practice information."
+            ]
+          },
+          {
+            "text": [
+              "Please enter practice name."
+            ],
+            "collect": {
+              "key": "practice_question_1",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "next"
+                }
+              ]
+            }
+          },
+          {
+            "text": [
+              "Please enter state postal code."
+            ],
+            "collect": {
+              "key": "practice_question_2",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "next"
+                }
+              ]
+            }
+          },
+          {
+            "action": "end"
+          }
+        ]
+      },
+      {
+        "topic": "end",
+        "script": [
+          {
+            "action": "complete"
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "pattern": "apd-2",
+        "type": "string",
+        "id": 52
+      },
+      {
+        "type": "string",
+        "pattern": "accurate_provider_data"
+      }
+    ],
+    "variables": [
+      {
+        "name": "practice_question_2",
+        "type": "string",
+        "id": 187
+      },
+      {
+        "name": "practice_question_1",
+        "type": "string",
+        "id": 441
+      },
+      {
+        "name": "doctor_question_3",
+        "type": "string",
+        "id": 292
+      },
+      {
+        "name": "doctor_question_2",
+        "type": "string",
+        "id": 298
+      },
+      {
+        "name": "doctor_question_1",
+        "type": "string",
+        "id": 26
+      },
+      {
+        "name": "question_1",
+        "type": "string"
+      },
+      {
+        "name": "question_2",
+        "type": "string"
+      },
+      {
+        "name": "question_3",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "command": "intelligent_diagnostic_insights",
+    "description": "Provide intelligent diagnostic insights",
+    "script": [
+      {
+        "topic": "default",
+        "script": [
+          {
+            "text": [
+              "In order to provide you intelligent diagnostic insights, I need some information."
+            ]
+          },
+          {
+            "text": [
+              "Please enter your sex, male or female."
+            ],
+            "collect": {
+              "key": "question_1",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "next"
+                }
+              ]
+            }
+          },
+          {
+            "text": [
+              "Please enter your age."
+            ],
+            "collect": {
+              "key": "question_2",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "next"
+                }
+              ]
+            }
+          },
+          {
+            "text": [
+              "What are you feeling?"
+            ],
+            "collect": {
+              "key": "question_3",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "next"
+                }
+              ]
+            }
+          },
+          {
+            "action": "end"
+          }
+        ]
+      },
+      {
+        "topic": "on_timeout",
+        "script": [
+          {
+            "text": [
+              "Looks like you got distracted. We can continue later."
+            ]
+          },
+          {
+            "action": "timeout"
+          }
+        ]
+      },
+      {
+        "topic": "end",
+        "script": [
+          {
+            "action": "complete"
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "pattern": "idi-1",
+        "type": "string",
+        "id": 28
+      },
+      {
+        "pattern": "intelligent_diagnostic_insights",
+        "type": "string",
+        "id": 25
+      }
+    ],
+    "variables": [
+      {
+        "name": "question_1",
+        "type": "string"
+      },
+      {
+        "name": "question_2",
+        "type": "string"
+      },
+      {
+        "name": "question_3",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "command": "identify_yourself",
+    "description": "What the bot says when someone asks, \"who are you?\"",
+    "script": [
+      {
+        "topic": "default",
+        "script": [
+          {
+            "text": [
+              "Hi, I'm **HCA-21**.<br><br>I can provide intelligent diagnostic insights, accurate provider data, health topic summaries, curated drug information, & stock price of a medical corporation."
+            ]
+          },
+          {
+            "action": "complete"
+          }
+        ]
+      },
+      {
+        "topic": "timeout",
+        "script": [
+          {
+            "text": [
+              "Looks like you got distracted. We can continue later."
+            ]
+          },
+          {
+            "action": "timeout"
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "type": "string",
+        "pattern": "identify"
+      },
+      {
+        "type": "string",
+        "pattern": "are you a person"
+      },
+      {
+        "type": "string",
+        "pattern": "are you a robot"
+      },
+      {
+        "type": "string",
+        "pattern": "what are you"
+      },
+      {
+        "type": "string",
+        "pattern": "who are you"
+      },
+      {
+        "type": "string",
+        "pattern": "identify yourself"
+      }
+    ],
+    "variables": [
+      {
+        "name": "question_1",
+        "type": "string"
+      },
+      {
+        "name": "question_2",
+        "type": "string"
+      },
+      {
+        "name": "question_3",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "command": "help",
+    "description": "A flexible help system for your bot",
+    "script": [
+      {
+        "topic": "default",
+        "script": [
+          {
+            "text": [
+              "I'm here to help! Here are some of the commands that you can use to get the information you want.<br><br>**idi-1:** intelligent diagnostic insights<br>**apd-2:** accurate provider data<br>**hts-3:** health topic summaries<br>**cdi-4:** curated drug information<br>**msp-5:** stock price of a medical corporation"
+            ],
+            "attachments": [
+              {
+                "title": "uptime",
+                "text": "See how long this bot has been running",
+                "fields": [],
+                "actions": [],
+                "color": "#ff0000",
+                "fallback": "Command 1"
+              },
+              {
+                "title": "identify",
+                "text": "Who is this bot, anyways?",
+                "fields": [],
+                "actions": [],
+                "color": "#ff8000"
+              },
+              {
+                "title": "say <something>",
+                "text": "The bot will repeat after you",
+                "fields": [],
+                "actions": [],
+                "color": "#ffff00"
+              },
+              {
+                "title": "My Custom Command",
+                "text": "Customize me!",
+                "fields": [],
+                "actions": [],
+                "color": "#80ff00"
+              },
+              {
+                "title": "My Custom Command",
+                "text": "Customize Me!",
+                "fields": [],
+                "actions": [],
+                "color": "#0080ff"
+              }
+            ]
+          },
+          {
+            "action": "complete"
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "type": "string",
+        "pattern": "help"
+      }
+    ],
+    "variables": []
+  },
+  {
+    "command": "goodbye",
+    "description": "Respond when a human says bye!",
+    "script": [
+      {
+        "topic": "default",
+        "script": [
+          {
+            "text": [
+              "See you soon."
+            ]
+          },
+          {
+            "action": "complete"
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "type": "string",
+        "pattern": "goodbye"
+      },
+      {
+        "type": "string",
+        "pattern": "bye"
+      },
+      {
+        "type": "string",
+        "pattern": "later"
+      },
+      {
+        "type": "string",
+        "pattern": "buhbye"
+      }
+    ],
+    "variables": []
+  },
+  {
+    "command": "thanks",
+    "description": "Respond when a human says thanks!",
+    "script": [
+      {
+        "topic": "default",
+        "script": [
+          {
+            "text": [
+              "You are welcome!",
+              "You're welcome!",
+              "No problem.",
+              "Sure!",
+              "Just doing my job.",
+              "Anytime.",
+              "My pleasure.",
+              "Don’t mention it.",
+              "It's no bother.",
+              "Think nothing of it."
+            ]
+          },
+          {
+            "action": "complete"
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "type": "string",
+        "pattern": "thanks"
+      },
+      {
+        "type": "string",
+        "pattern": "thank you"
+      }
+    ],
+    "variables": []
+  },
+  {
+    "command": "hello",
+    "description": "Respond when a human says hello!",
+    "script": [
+      {
+        "topic": "default",
+        "script": [
+          {
+            "text": [
+              "Hello Human!",
+              "How do you do?",
+              "Nice to meet you Human.",
+              "Hi!",
+              "How’s it going?",
+              "Hey!",
+              "Hey there!",
+              "Howdy!",
+              "G`day human!",
+              "Salut!",
+              "Ciao!",
+              "Hola!",
+              "Shalom!"
+            ]
+          },
+          {
+            "action": "complete"
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "type": "string",
+        "pattern": "hello"
+      },
+      {
+        "type": "string",
+        "pattern": "hey"
+      },
+      {
+        "type": "string",
+        "pattern": "hi"
+      },
+      {
+        "type": "string",
+        "pattern": "howdy"
+      }
+    ],
+    "variables": []
+  }
+]
