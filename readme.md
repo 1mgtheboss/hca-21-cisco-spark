@@ -3,7 +3,7 @@
 HCA-21 redefines healthcare. The US national health expenditure (NHE) in 2015 was [$3.2 T](https://www.cms.gov/research-statistics-data-and-systems/statistics-trends-and-reports/nationalhealthexpenddata/nhe-fact-sheet.html), $9,990 per person. It accounted for 17.8% of Gross Domestic Product (GDP). In 2016-25, the NHE is projected to grow at an average rate of 5.6% per year and will reach close to [20%](https://www.advisory.com/daily-briefing/2017/02/16/spending-growth) of GDP by 2025. In 2009-14, the personal healthcare spending in the US grew at an average rate of 3.9% per year. A principle reason behind the continuing rise in healthcare expenditure is inefficent, limited, and fragmented use of ground-breaking technologies such as, artificial intelligence, natural language processing, automation. Perhaps the healthcare industry has been a little bit hesitant in taking full advantage of the wonders of 21st century. HCA-21 aims to change that.
 
 ## Usage
-The user can add HCA-21 to a cisco spark space through its username. When added to a space, the bot will introduce itself and explain its capabilities. In order to access its capabilities, the user needs to use specific commands. The commands are explained below. 
+The user can add HCA-21 to a cisco spark space through its username, hca-21@sparkbot.io. When added to a space, the bot will introduce itself and explain its capabilities. In order to access its capabilities, the user needs to use specific commands. The commands are explained below. 
 1. `help`: This command displays the list and summaries of 5 main commands, idi-1, apd-2, hts-3, cdi-4, & msp-5.
 2. `idi-1`: This command allows the user to access intelligent diagnostic insights feature. 
 3. `apd-2`: This command allows the user to retrieve healthcare provider information, both doctors' and practices'.
@@ -279,22 +279,22 @@ Here is the stock price of medtronic:
 
 
 ## Troubleshooting
-The bot has been tested rigorously against fair use. If the bot does not behave in the expected manner, which is highly unlikely, feel free to get in touch. The bot is hosted on [Glitch](glitch.com). The bot uses studio feature. The bot also uses Cisco Spark APIs, and five other apis, infermedica.com, betterdoctor.com, wolframalpha.com (full results), open.fda.gov, & wolframalpha.com (short answers). If you plan to get in touch please make sure all the APIs the bot uses are operational. You can do that by going to the status pages of the APIs/ platforms. The available status pages are listed in the Status Pages section. For the APIs that do not have a dedicated status page, the blog pages have been mentioned as API issues are announced on official blogs. API status research can also be done on social media. Unexpected behavior can also be caused if API limits have been exceeded. The API limits have been listed in Limits section. 
+The bot has been tested rigorously against fair use. If the bot does not behave in the expected manner, which is highly unlikely, feel free to get in touch. The bot is hosted on [Glitch](https://glitch.com). The bot uses studio feature. The bot also uses Cisco Spark APIs, and five other apis, infermedica.com, betterdoctor.com, wolframalpha.com (full results), open.fda.gov, & wolframalpha.com (short answers). If you plan to get in touch please make sure all the APIs the bot uses are operational. You can do that by going to the status pages of the APIs/ platforms. The available status pages are listed in the Status Pages section. For the APIs that do not have a dedicated status page, the blog pages have been mentioned as API issues are announced on official blogs. API status research can also be done on social media. Unexpected behavior can also be caused if API limits have been exceeded. The API limits have been listed in Limits section. 
 
 ## Known Issues
-HCA-21 is hosted on [Glitch](glitch.com). If you are going to interact with the bot for the first time or after a long time, please give it 30 seconds to wake up. In most cases, the bot will wake up in much less than 30 seconds. The waiting time for an average person to see a doctor in the US is [24](http://www.healthline.com/health-news/why-you-have-to-wait-longer-to-get-a-doctors-appointment) days.
+HCA-21 is hosted on [Glitch](https://glitch.com). If you are going to interact with the bot for the first time or after a long time, please give it 30 seconds to wake up. In most cases, the bot will wake up in much less than 30 seconds. The waiting time for an average person to see a doctor in the US is [24](http://www.healthline.com/health-news/why-you-have-to-wait-longer-to-get-a-doctors-appointment) days.
 
 It has been observed that on web.ciscospark.com (Browser: Chrome, OS: Windows 7 Professional), a botkit bot fails to process direct mentions in the expected manner. This is due to [#749](https://github.com/howdyai/botkit/issues/749). The issue is not observed in the Windows 7 Professional native client. It is recommended that the bot is communicated to in direct message mode in the above-mentioned case.
 
 ## Status Pages
-Cisco Spark: [status.ciscospark.com](status.ciscospark.com)  
-Glitch: [status.glitch.com](status.glitch.com)  
-Studio: [blog.howdy.ai](blog.howdy.ai)  
-Infermedica: [status.infermedica.com](status.infermedica.com)  
-BetterDoctor: [betterdoctor.com/health](betterdoctor.com/health)  
-Wolfram|Alpha (Full Results): [blog.wolframalpha.com](blog.wolframalpha.com)  
-openFDA: [open.fda.gov/api/status  ](open.fda.gov/api/status)  
-Wolfram|Alpha (Short Answers): [blog.wolframalpha.com](blog.wolframalpha.com)  
+Cisco Spark: [status.ciscospark.com](https://status.ciscospark.com)  
+Glitch: [status.glitch.com](http://status.glitch.com)  
+Studio: [blog.howdy.ai](https://blog.howdy.ai)  
+Infermedica: [status.infermedica.com](http://status.infermedica.com)  
+BetterDoctor: [betterdoctor.com/health](https://betterdoctor.com/health)  
+Wolfram|Alpha (Full Results): [blog.wolframalpha.com](https://blog.wolframalpha.com)  
+openFDA: [open.fda.gov/api/status  ](https://open.fda.gov/api/status)  
+Wolfram|Alpha (Short Answers): [blog.wolframalpha.com](https://blog.wolframalpha.com)  
 
 ## Limits
 Studio: 500  
