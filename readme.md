@@ -1,13 +1,13 @@
 # HCA-21
 ## Introduction
-HCA-21 redefines healthcare. The US national health expenditure (NHE) in 2015 was [$3.2 T](https://www.cms.gov/research-statistics-data-and-systems/statistics-trends-and-reports/nationalhealthexpenddata/nhe-fact-sheet.html), $9,990 per person. It accounted for 17.8% of Gross Domestic Product (GDP). In 2016-25, the NHE is projected to grow at an average rate of 5.6% per year and will reach close to [20%](https://www.advisory.com/daily-briefing/2017/02/16/spending-growth) of GDP by 2025. In 2009-14, the personal healthcare spending in the US grew at an average rate of 3.9% per year. A principle reason behind the continuing rise in healthcare expenditure is inefficient, limited, and fragmented use of ground-breaking technologies such as, artificial intelligence, natural language processing, automation. Perhaps the healthcare industry has been a little bit hesitant in taking full advantage of the wonders of the 21st century. HCA-21 aims to change that.
+HCA-21 redefines healthcare. The US national health expenditure (NHE) in 2015 was [$3.2 T](https://www.cms.gov/research-statistics-data-and-systems/statistics-trends-and-reports/nationalhealthexpenddata/nhe-fact-sheet.html), $9,990 per person. It accounted for 17.8% of Gross Domestic Product (GDP). In 2016-25, the NHE is projected to grow at an average rate of 5.6% per year and will reach close to [20%](https://www.advisory.com/daily-briefing/2017/02/16/spending-growth) of GDP by 2025. In 2009-14, the personal healthcare spending in the US grew at an average rate of 3.9% per year. A principal reason behind the continuing rise in healthcare expenditure is inefficient, limited, and fragmented use of ground-breaking technologies such as, artificial intelligence, natural language processing, automation. Perhaps the healthcare industry has been a little bit hesitant in taking full advantage of the wonders of the 21st century. HCA-21 aims to change that.
 
 ## Usage
 The user can add HCA-21 to a Cisco Spark space through its username i.e. the email address associated to the bot. When added to a space, the bot will introduce itself and explain its capabilities. In order to access its capabilities, the user needs to use specific commands. The commands are explained below. 
 1. `help`: This command displays the list and summaries of 5 main commands, idi-1, apd-2, hts-3, cdi-4, & msp-5.
 2. `idi-1`: This command allows the user to access intelligent diagnostic insights feature. 
 3. `apd-2`: This command allows the user to retrieve healthcare provider information, both doctors' and practices'.
-4. `hts-3`: This command provides a summary of a health topic, for instance a disease.
+4. `hts-3`: This command provides a summary of a health topic, for instance, a disease.
 5. `cdi-4`: This command allows the user to retrieve curated drug information.
 6. `msp-5`: This command allows the user to get a medical corporation's stock price.
 
