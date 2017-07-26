@@ -283,7 +283,7 @@ The bot has been tested rigorously against fair use. If the bot does not behave 
 
 HCA-21 is hosted on [Glitch](https://glitch.com). If you are going to interact with the bot for the first time or after a long time, please give it 30 seconds to wake up. In most cases, the bot will wake up in much less than 30 seconds. The waiting time for an average person to see a doctor in the US is [24](http://www.healthline.com/health-news/why-you-have-to-wait-longer-to-get-a-doctors-appointment) days.
 
-It has been observed that on web.ciscospark.com (Browser: Chrome, OS: Windows 7 Professional), a botkit bot fails to process direct mentions in the expected manner. This is due to [#749](https://github.com/howdyai/botkit/issues/749). The issue is not observed in the Windows 7 Professional native client. It is recommended that the bot is communicated to in direct message mode in the above-mentioned case.
+It has been observed that on web.ciscospark.com (Browser: Chrome, OS: Windows 7 Professional), a botkit bot fails to process direct mentions in the expected manner. This is due to botkit issue [#749](https://github.com/howdyai/botkit/issues/749). The issue is not observed in the Windows 7 Professional native client. It is recommended that the bot is communicated to in direct message mode in the above-mentioned case.
 
 ## Status Pages
 Cisco Spark: [status.ciscospark.com](https://status.ciscospark.com)  
